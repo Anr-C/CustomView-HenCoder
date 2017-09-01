@@ -5,6 +5,6 @@
 
 而我,是需要进阶训练的那些人,这也是这个仓库产生的原因
 
-## Android 开发进阶 UI 部分 1-1：绘制基础
+## Android 开发进阶 UI 部分 1-1：绘制基础 ![LINK](https://zhuanlan.zhihu.com/p/27787919)
 Canvas 的 drawXXX() 系列方法及 Paint 最常见的使用
 ![Android 开发进阶 UI 部分 1-1：绘制基础](https://github.com/TIL-MICE/CustomView-HenCoder/blob/master/PracticeDraw1-master/images/preview_after.png)
