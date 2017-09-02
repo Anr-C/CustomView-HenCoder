@@ -2,8 +2,10 @@ package com.hencoder.hencoderpracticedraw2.practice;
 
 import android.content.Context;
 import android.graphics.Canvas;
+import android.graphics.DashPathEffect;
 import android.graphics.Paint;
 import android.graphics.Path;
+import android.graphics.PathEffect;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
@@ -47,6 +49,8 @@ public class Practice15FillPathView extends View {
 
         paint.setStyle(Paint.Style.FILL_AND_STROKE);
         paint.setStrokeWidth(0);
+        //方法的参数里，src 是原 Path ，而 dst 就是实际  Path 的保存位置。
+        paint.getFillPath(path,path1);// getFillPath(src, dst) 会计算出实际 Path，然后把结果保存在 dst 里。
         // 第一处：获取 Path
         canvas.drawPath(path, paint);
 
@@ -57,7 +61,10 @@ public class Practice15FillPathView extends View {
 
         canvas.save();
         canvas.translate(0, 200);
+//非原题 改为20宽线
+        paint.setStrokeWidth(20);
         paint.setStyle(Paint.Style.STROKE);
+        paint.getFillPath(path,path2);
         // 第二处：设置 Style 为 STROKE 后再获取 Path
         canvas.drawPath(path, paint);
         canvas.restore();
@@ -70,12 +77,16 @@ public class Practice15FillPathView extends View {
         canvas.save();
         canvas.translate(0, 400);
         paint.setStrokeWidth(40);
+        paint.getFillPath(path,path3);
         // 第三处：Style 为 STROKE 并且线条宽度为 40 时的 Path
         canvas.drawPath(path, paint);
         canvas.restore();
 
         canvas.save();
         canvas.translate(500, 400);
+        //虚线绘图
+        PathEffect pathEffect = new DashPathEffect(new float[]{20,10,5,10}, 0);
+        pathPaint.setPathEffect(pathEffect);
         canvas.drawPath(path3, pathPaint);
         canvas.restore();
     }

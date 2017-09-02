@@ -40,14 +40,17 @@ public class Practice10StrokeJoinView extends View {
 
         // 使用 Paint.setStrokeJoin() 来设置不同的拐角形状
 
+        paint.setStrokeJoin(Paint.Join.MITER);
         canvas.translate(100, 100);
         // 第一种形状：MITER
         canvas.drawPath(path, paint);
 
+        paint.setStrokeJoin(Paint.Join.BEVEL);
         canvas.translate(300, 0);
         // 第二种形状：BEVEL
         canvas.drawPath(path, paint);
 
+        paint.setStrokeJoin(Paint.Join.ROUND);
         canvas.translate(300, 0);
         // 第三种形状：ROUND
         canvas.drawPath(path, paint);

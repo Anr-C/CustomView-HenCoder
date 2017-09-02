@@ -1,5 +1,6 @@
 package com.hencoder.hencoderpracticedraw2;
 
+import android.graphics.Paint;
 import android.os.Bundle;
 import android.support.annotation.LayoutRes;
 import android.support.annotation.StringRes;
@@ -61,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
                 return getString(pageModels.get(position).titleRes);
             }
         });
-
+        pager.setCurrentItem(14);
         tabLayout = (TabLayout) findViewById(R.id.tabLayout);
         tabLayout.setupWithViewPager(pager);
     }

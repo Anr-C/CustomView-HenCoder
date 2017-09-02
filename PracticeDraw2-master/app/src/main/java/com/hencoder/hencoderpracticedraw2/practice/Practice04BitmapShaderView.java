@@ -33,6 +33,7 @@ public class Practice04BitmapShaderView extends View {
         // Bitmap: R.drawable.batman
         Bitmap bitmap= BitmapFactory.decodeResource(getResources(), R.drawable.batman);
         Shader shader=new BitmapShader(bitmap, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP);
+        //后两个tilMode分别为x y两个轴的模式 不同的模式 扩展的方式不一样
         paint.setShader(shader);
     }
 
