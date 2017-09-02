@@ -8,3 +8,10 @@
 ## Android 开发进阶 UI 部分 1-1：绘制基础 ![LINK](https://zhuanlan.zhihu.com/p/27787919)
 Canvas 的 drawXXX() 系列方法及 Paint 最常见的使用
 ![Android 开发进阶 UI 部分 1-1：绘制基础](https://github.com/TIL-MICE/CustomView-HenCoder/blob/master/PracticeDraw1-master/images/preview_after.png)
+
+## HenCoder Android 开发进阶: 自定义 View 1-2 Paint 详解
+对于没有深入研究过 Paint 的人，这期是一个对 Paint 的诠释；而对于尝试过研究 Paint 但仍然对其中一些 API 有疑惑的人，这期也可以帮你解惑。
+![自定义 View 1-2 Paint 详解](https://github.com/TIL-MICE/CustomView-HenCoder/blob/master/PracticeDraw2-master/images/preview_after.png)
+
+
+
