@@ -14,3 +14,11 @@ Canvas 的 drawXXX() 系列方法及 Paint 最常见的使用
 ![自定义 View 1-2 Paint 详解](https://github.com/TIL-MICE/CustomView-HenCoder/blob/master/PracticeDraw2-master/images/preview_after.png)
 实际项目运行部分与原题同,本人做了部分拓展
 
+## HenCoder Android 开发进阶：自定义 View 1-3 文字的绘制 [LINK](http://hencoder.com/ui-1-3/)
+上期的 Paint 详解里已经说过，文字的绘制所能控制的内容太多太细，必须拆成单独的一期专门来讲。今天这期，就是来把这些细节讲清楚的。
+
+需要说明的有两点：
+
+和上期一样，这期讲的是细节，其中有一部分内容并不是很常用，所以这期你不必要求自己把内容全部背会，而只要做到全部理解，知道都有什么东西，大概怎么用就好，到你真正需要用的时候再拐回来看就是；
+除了常用和不常用的内容，本期还会讲到一些比较偏门的细节。这些偏门几乎永远不会用到，我讲这些偏门的目的也只是为了做到知识的全覆盖，帮你破开迷雾解开谜团，把那些「始终没有搞懂，也不知道有没有用」的 API 解释出来。有的时候，一样东西你确定了它确实没用，也就够了。所以如果遇到这些偏门的内容，你感兴趣，看看就好；不感兴趣，不看也罢——总之，不要把太多精力放在它们身上。
+![自定义 View 1-3 文字的绘制](https://github.com/TIL-MICE/CustomView-HenCoder/blob/master/PracticeDraw3-master/images/preview_after.png)
