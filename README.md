@@ -28,3 +28,13 @@ Canvas 对绘制的辅助——范围裁切和几何变换。
 ![Canvas 对绘制的辅助——范围裁切和几何变换。](https://github.com/TIL-MICE/CustomView-HenCoder/blob/master/PracticeDraw4-master/images/preview_after.png)
 
 这一章节涉及的内容比较复杂,主要是很多没接触过,得细细品味才有收获,
+
+## HenCoder Android 开发进阶：自定义 View 1-5 绘制顺序[LINK](http://hencoder.com/ui-1-5/)
+前面几期讲的是「术」，是「用哪些 API 可以绘制什么内容」。到上一期为止，「术」已经讲完了，接下来要讲的是「道」，是「怎么去安排这些绘制」。
+
+这期是「道」的第一期：绘制顺序。
+
+Android 里面的绘制都是按顺序的，先绘制的内容会被后绘制的盖住。比如你在重叠的位置先画圆再画方，和先画方再画圆所呈现出来的结果肯定是不同的：
+
+而在实际的项目中，绘制内容相互遮盖的情况是很普遍的，那么怎么实现自己需要的遮盖关系，就是这期要讲的内容。
+![自定义 View 1-5 绘制顺序](https://github.com/TIL-MICE/CustomView-HenCoder/blob/master/PracticeDraw5-master/images/preview_after.png)
