@@ -26,3 +26,5 @@ Canvas 的 drawXXX() 系列方法及 Paint 最常见的使用
 ## HenCoder Android 开发进阶：自定义 View 1-4 Canvas 对绘制的辅助 [LINK](http://hencoder.com/ui-1-4/)
 Canvas 对绘制的辅助——范围裁切和几何变换。
 ![Canvas 对绘制的辅助——范围裁切和几何变换。](https://github.com/TIL-MICE/CustomView-HenCoder/blob/master/PracticeDraw4-master/images/preview_after.png)
+
+这一章节涉及的内容比较复杂,主要是很多没接触过,得细细品味才有收获,
