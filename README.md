@@ -38,3 +38,14 @@ Android 里面的绘制都是按顺序的，先绘制的内容会被后绘制的
 
 而在实际的项目中，绘制内容相互遮盖的情况是很普遍的，那么怎么实现自己需要的遮盖关系，就是这期要讲的内容。
 ![自定义 View 1-5 绘制顺序](https://github.com/TIL-MICE/CustomView-HenCoder/blob/master/PracticeDraw5-master/images/preview_after.png)
+
+嗯，大概，这次就是泛泛而谈吧，需要结合实践来让理论升华，下一个app，我要把这些用上去。
+
+## HenCoder Android 自定义 View 1-6：属性动画 Property Animation（上手篇）[LINK](http://hencoder.com/ui-1-6/)
+ Android 里动画是有一些分类的：动画可以分为两类：Animation 和 Transition；其中 Animation 又可以再分为 View Animation 和 Property Animation 两类： View Animation 是纯粹基于 framework 的绘制转变，比较简单，如果你有兴趣的话可以上网搜一下它的用法；Property Animation，属性动画，这是在 Android 3.0 开始引入的新的动画形式，不过说它新只是相对的，它已经有好几年的历史了，而且现在的项目中的动画 99% 都是用的它，极少再用到 View Animation 了。属性动画不仅可以使用自带的 API 来实现最常用的动画，而且通过自定义 View 的方式来做出定制化的动画。除了这两种 Animation，还有一类动画是 Transition。 Transition 这个词的本意是转换，在 Android 里指的是切换界面时的动画效果，这个在逻辑上要复杂一点，不过它的重点是在于切换而不是动画，所以它也不是这次要讨论的内容。这次的内容只专注于一点：
+
+Property Animation（属性动画）。
+![自定义 View 1-6：属性动画](https://github.com/TIL-MICE/CustomView-HenCoder/blob/master/PracticeDraw6-master/images/preview_after.png)
+
+初始化
+
