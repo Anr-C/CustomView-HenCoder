@@ -57,5 +57,5 @@ Property Animation（属性动画）。
 TypeEvaluator
 
 关于 ObjectAnimator，上期讲到可以用 ofInt() 来做整数的属性动画和用 ofFloat() 来做小数的属性动画。这两种属性类型是属性动画最常用的两种，不过在实际的开发中，可以做属相动画的类型还是有其他的一些类型。当需要对其他类型来做属性动画的时候，就需要用到 TypeEvaluator 了。
-![](images/preview_after.png)
+![](https://github.com/TIL-MICE/CustomView-HenCoder/blob/master/PracticeDraw7-master/images/preview_after.png)
 
