@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
                 return getString(pageModels.get(position).titleRes);
             }
         });
-
+        pager.setCurrentItem(3);
         tabLayout = (TabLayout) findViewById(R.id.tabLayout);
         tabLayout.setupWithViewPager(pager);
     }

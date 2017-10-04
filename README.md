@@ -47,5 +47,5 @@ Android 里面的绘制都是按顺序的，先绘制的内容会被后绘制的
 Property Animation（属性动画）。
 ![自定义 View 1-6：属性动画](https://github.com/TIL-MICE/CustomView-HenCoder/blob/master/PracticeDraw6-master/images/preview_after.png)
 
-初始化
+看完了解了很多动画相关的拓展，循序渐进，很赞
 
