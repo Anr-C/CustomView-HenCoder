@@ -49,3 +49,13 @@ Property Animation（属性动画）。
 
 看完了解了很多动画相关的拓展，循序渐进，很赞
 
+## HenCoder Android 自定义 View 1-7：属性动画 Property Animation（进阶篇）
+上期的内容，对于大多数简单的属性动画场景已经够用了。这期的内容主要针对两个方面：
+
+针对特殊类型的属性来做属性动画；
+针对复杂的属性关系来做属性动画。
+TypeEvaluator
+
+关于 ObjectAnimator，上期讲到可以用 ofInt() 来做整数的属性动画和用 ofFloat() 来做小数的属性动画。这两种属性类型是属性动画最常用的两种，不过在实际的开发中，可以做属相动画的类型还是有其他的一些类型。当需要对其他类型来做属性动画的时候，就需要用到 TypeEvaluator 了。
+![](images/preview_after.png)
+
