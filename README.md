@@ -49,7 +49,7 @@ Property Animation（属性动画）。
 
 看完了解了很多动画相关的拓展，循序渐进
 
-## HenCoder Android 自定义 View 1-7：属性动画 Property Animation（进阶篇）
+## HenCoder Android 自定义 View 1-7：属性动画 Property Animation（进阶篇）[Link](http://hencoder.com/ui-1-7/)
 上期的内容，对于大多数简单的属性动画场景已经够用了。这期的内容主要针对两个方面：
 
 针对特殊类型的属性来做属性动画；
@@ -63,4 +63,16 @@ TypeEvaluator
 1,使用 PropertyValuesHolder 来对多个属性同时做动画；
 2,使用 AnimatorSet 来同时管理调配多个动画；
 3,PropertyValuesHolder 的进阶使用：使用 PropertyValuesHolder.ofKeyframe() 来把一个属性拆分成多段，执行更加精细的属性动画。
+
+## HenCoder Android 自定义 View 1-8：硬件加速[Link](http://hencoder.com/ui-1-8/)
+硬件加速指的是使用 GPU 来完成绘制的计算工作，代替 CPU。它从工作分摊和绘制机制优化这两个角度提升了绘制的速度。
+
+硬件加速可以使用 setLayerType() 来关闭硬件加速，但这个方法其实是用来设置 View Layer 的：
+
+参数为 LAYER_TYPE_SOFTWARE 时，使用软件来绘制 View Layer，绘制到一个 Bitmap，并顺便关闭硬件加速；
+参数为 LAYER_TYPE_HARDWARE 时，使用 GPU 来绘制 View Layer，绘制到一个 OpenGL texture（如果硬件加速关闭，那么行为和 VIEW_TYPE_SOFTWARE 一致）；
+参数为 LAYER_TYPE_NONE 时，关闭 View Layer。
+View Layer 可以加速无 invalidate() 时的刷新效率，但对于需要调用 invalidate() 的刷新无法加速。
+
+View Layer 绘制所消耗的实际时间是比不使用 View Layer 时要高的，所以要慎重使用。
 
