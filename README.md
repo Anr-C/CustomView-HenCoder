@@ -60,4 +60,7 @@ TypeEvaluator
 ![](https://github.com/TIL-MICE/CustomView-HenCoder/blob/master/PracticeDraw7-master/images/preview_after.png)
 
 主要就是动画的配套 先后顺序问题
+1,使用 PropertyValuesHolder 来对多个属性同时做动画；
+2,使用 AnimatorSet 来同时管理调配多个动画；
+3,PropertyValuesHolder 的进阶使用：使用 PropertyValuesHolder.ofKeyframe() 来把一个属性拆分成多段，执行更加精细的属性动画。
 
